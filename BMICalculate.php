@@ -4,21 +4,18 @@ namespace BMICalculate;
 
 class BMICalculate
 {
-    public $length;
-    public $BMIcalculate;
 
     public function calculate($length,$weight){
         if ($length >= 0 || weight >= 0){
-
-            $a = $length * $length;
-            $b = $weight / $a;
-            $result = $b;
-            ceil($result);
-
-
-        }else{
-            return "Invalid Value";
-            exit;
+            if (is_float($length) && is_int($weight)){
+                $a = $length * $length;
+                $b = $weight / $a;
+                $result = $b;
+                ceil($result);
+            }else{
+                return "Enter your height as a decimal and your weight as a whole number";
+                exit;
+            }
         }
 
 
