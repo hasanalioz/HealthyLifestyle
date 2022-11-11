@@ -1,13 +1,12 @@
 <?php
 
 namespace BMICalculate;
-
 class BMICalculate
 {
 
     public function calculate($length,$weight){
-        if ($length >= 0 || weight >= 0){
-            if (is_float($length) && is_int($weight)){
+        if ($length >= 0 || $weight >= 0){
+            if (is_numeric($length)){
                 $a = $length * $length;
                 $b = $weight / $a;
                 $result = $b;
@@ -16,6 +15,7 @@ class BMICalculate
                 return "Enter your height as a decimal and your weight as a whole number";
                 exit;
             }
+
         }
 
 

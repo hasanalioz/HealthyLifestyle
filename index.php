@@ -13,8 +13,8 @@
 
 <form action="process.php" method="POST"  data-parsley-validate>
      <!-- Enter your height in decimal -->
-    <input type="text" name="length" placeholder="Your Length">
-    <input type="text" name="weight"  placeholder="Your Height">
+    <input type="text" name="length" placeholder="Example -> 1.80">
+    <input type="text" name="weight"  placeholder="Example -> 80">
     <button type="submit" name="bmi">Calculate</button>
 
 
